@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+export PYBUILD_DESTDIR_python3=debian/python3-simplejson/
+
+LAST_CHANGE = $(shell dpkg-parsechangelog -S Date)
+BUILD_DATE  = $(shell LC_ALL=C date -u "+%B %d, %Y" -d "$(LAST_CHANGE)")
+SPHINXOPTS := -D html_last_updated_fmt="$(BUILD_DATE)"
+
+%:
+	dh $@ --with sphinxdoc --buildsystem=pybuild
+
+execute_after_dh_auto_install-indep:
+	PYTHONPATH=$(shell pybuild --print build_dir --interpreter python3) \
+	python3 -m sphinx $(SPHINXOPTS) -N -q -E -b html $(CURDIR) \
+	 $(CURDIR)/debian/python-simplejson-doc/usr/share/doc/python-simplejson-doc/

@@ -1,0 +1,66 @@
+Source: simplejson
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders:
+ Piotr Ożarowski <piotr@debian.org>,
+ Thomas Goirand <zigo@debian.org>,
+Standards-Version: 4.5.1
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ python3-all-dev,
+ python3-setuptools,
+ python3-sphinx,
+Homepage: https://simplejson.readthedocs.io/
+Vcs-Git: https://salsa.debian.org/python-team/packages/simplejson.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/simplejson
+
+Package: python-simplejson-doc
+Section: doc
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${sphinxdoc:Depends},
+Recommends:
+ python3-simplejson,
+Multi-Arch: foreign
+Description: simple, fast, extensible JSON encoder/decoder for Python - documentation
+ simplejson is a simple, fast, complete, correct and extensible JSON
+ <http://json.org> encoder and decoder.
+ .
+ The encoder may be subclassed to provide serialization in any kind of
+ situation, without any special support by the objects to be serialized
+ (somewhat like pickle).
+ .
+ The decoder can handle incoming JSON strings of any specified encoding
+ (UTF-8 by default).
+ .
+ simplejson is the externally maintained development version of the json
+ library included with Python 2.6 and Python 3.0, but maintains backwards
+ compatibility with Python 2.5.
+ .
+ This package contains documentation.
+
+Package: python3-simplejson
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ ${shlibs:Depends},
+Description: simple, fast, extensible JSON encoder/decoder for Python 3.x
+ simplejson is a simple, fast, complete, correct and extensible JSON
+ <http://json.org> encoder and decoder.
+ .
+ The encoder may be subclassed to provide serialization in any kind of
+ situation, without any special support by the objects to be serialized
+ (somewhat like pickle).
+ .
+ The decoder can handle incoming JSON strings of any specified encoding
+ (UTF-8 by default).
+ .
+ simplejson is the externally maintained development version of the json
+ library included with Python 2.6 and Python 3.0, but maintains backwards
+ compatibility with Python 2.5.
+ .
+ This package contains the Python 3.x module.
