@@ -5,7 +5,7 @@ Maintainer: Debian Python Team <team+python@tracker.debian.org>
 Uploaders:
  Piotr Ożarowski <piotr@debian.org>,
  Thomas Goirand <zigo@debian.org>,
-Standards-Version: 4.5.1
+Standards-Version: 4.6.1
 Build-Depends:
  debhelper-compat (= 13),
  dh-sequence-python3,

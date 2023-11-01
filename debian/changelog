@@ -1,3 +1,50 @@
+simplejson (3.19.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 14 Oct 2023 15:12:01 +0200
+
+simplejson (3.19.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 22 Jun 2023 14:40:57 +0200
+
+simplejson (3.18.4-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 30 Mar 2023 12:58:49 +0200
+
+simplejson (3.18.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 09 Feb 2023 15:29:32 +0100
+
+simplejson (3.18.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Fri, 06 Jan 2023 15:40:22 +0100
+
+simplejson (3.18.0-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Update standards version to 4.6.1, no changes needed.
+
+  [ Piotr Ożarowski ]
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 21 Dec 2022 12:51:11 +0100
+
+simplejson (3.17.6-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 15 Feb 2022 16:24:21 +0100
+
 simplejson (3.17.5-3) unstable; urgency=medium
 
   * Team upload.
