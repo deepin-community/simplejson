@@ -1,3 +1,9 @@
+simplejson (3.19.2-1deepin1) unstable; urgency=medium
+
+  * No source change upload against python 3.12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Mon, 08 Jul 2024 09:57:52 +0200
+
 simplejson (3.19.2-1) unstable; urgency=medium
 
   * New upstream release
